@@ -1,0 +1,341 @@
+*{
+  margin:0px;
+  
+  padding:0px;
+  border:0px;
+  font-family: sans-serif;
+}
+/* button,input,textarea,select {
+  all:unset;
+} */
+#wholecontainer
+{
+  width:100vw;
+  height:100vh;
+  background-color: #F2F2F0;
+}
+#navigation{
+  display: flex;
+  height:2.5rem;
+  align-items: center;
+  padding:20px 0px 0px 20px;
+  /* padding: 10px; */
+}
+#navigation #menus{
+  flex:3;
+  display: flex;
+  font-weight: bold;
+  font-size: 1.1rem;
+  gap:1.5rem;
+
+}
+#logo{
+  flex:6;
+  font-weight: bold;
+  font-size: 1.4rem;
+  /* min-width: 20rem; */
+}
+#menuline{
+  display: none;
+}
+#menus div{
+  flex: 1;
+  cursor: pointer;
+  /* max-width: 140px; */
+
+}
+.Logininactive{
+  display: none;
+}
+.Logoutinactive{
+  display: none;
+}
+.Loginactive{
+  display: block;
+}
+.Logoutactive{
+  display: block;
+}
+#categoriesmenu{
+  width:140px;
+  height:100px;
+  background-color: white;
+  text-align: center;
+  border-radius: 7px;
+  margin:15px 0px 0px 1010px;
+  position: absolute;
+}
+#categoriesmenu div{
+   padding:5px;
+   cursor: pointer;
+}
+#categoriesmenu div:hover{
+  background-color: rgb(226, 226, 226);
+}
+#brandsmenu{
+  width:160px;
+  height:273px;
+  background-color: white;
+  text-align: center;
+  border-radius: 7px;
+  margin:15px 0px 0px 1140px;
+  position: absolute;
+}
+#brandsmenu div{
+   padding:5px;
+   cursor: pointer;
+}
+#brandsmenu div:hover{
+  background-color: rgb(226, 226, 226);
+}
+#searchbar{
+  display: flex;
+  justify-content: center;
+  gap:2rem;
+  margin-bottom: 2rem;
+
+}
+#searchbar input{
+  width:30rem;
+  height:40px;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 7px;
+  /* cursor: pointer; */
+  outline: none;
+}
+#searchbar button{
+  width:7rem;
+  font-weight: bold;
+  background-color: azure;
+  height:40px;
+  font-size: 1rem;
+  padding:5px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+#Itemcontainer button{
+  width:8rem;
+  height:2rem;
+  padding:5px;
+  background-color: #A7C1A8;
+  margin: 20px 0px 10px 90px;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#Itemcontainer button:active{
+  background-color:#d7e5d7;
+}
+
+#Itemcontainer{
+  width:20rem;
+  height:32rem;
+  border-radius: 12px;
+  background-color: rgb(250, 250, 250);
+  padding:3px;
+  cursor: pointer;
+
+}
+#productcontainer{
+  width:100vw;
+  margin-top: 50px;
+  background-color:#F2F2F0;
+  height: max-content;
+  /* height:100%; */
+  /* text-align: center; */
+
+}
+#productcontainer h2{
+  text-align: center;
+}
+#Itemcontainer img{
+  width:100%;
+  
+}
+#menulinemenu{
+  width:120px;
+  height:100px;
+  background-color: white;
+  position: absolute;
+  text-align: center;
+  border-radius: 7px;
+  /* display: none; */
+
+}
+#menulinemenu div{
+  padding:5px;
+}
+#menulinemenu div:hover{
+  background-color: rgb(243, 240, 240);
+}
+
+.lists{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+  gap: 4.7rem;
+  /* width:1300px; */
+
+  margin:20px 20px 20px 20px;
+}
+#cartItem{
+  display: grid;
+  width:800px;
+  background-color:#d7e5d7;
+  grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+  cursor: pointer;
+}
+#loginpage{
+  padding:0px;
+  margin:0px;
+  border:0px;
+}
+
+#logincontainer{
+  
+  background-color: rgb(221, 222, 223);
+  height:100vh;
+  width:100vw;
+  /* padding:10px 20px 10px 20px; */
+  /* background-color: ; */
+}
+#loginbox{
+   margin:50px 0px 0px 0px;
+   width:380px;
+   height:450px;
+   background-color: rgb(242, 242, 240);
+   padding:20px 20px 20px 20px;
+   border-radius: 7px;
+}
+#Registerbox{
+   margin:20px 0px 0px 0px;
+   width:380px;
+   height:540px;
+   background-color: rgb(242, 242, 240);
+   padding:20px 20px 20px 20px;
+   border-radius: 7px;
+   /* position: absolute; */
+}
+.Regpageinactive{
+  #Registerbox{
+    display: none;
+  }
+}
+.Regpageactive{
+  #Registerbox{
+    display: block;
+    /* display: flex;
+    justify-content: center; */
+  }
+}
+.Loginpageinactive{
+  #loginbox{
+    display: none;
+  }
+
+}
+.Loginpageactive{
+  #loginbox{
+    display: block;
+  }
+}
+
+.label{
+  width:100px;
+  font-weight: 700;
+}
+
+#loginpagenav{
+  display: flex;
+  background-color: rgb(74, 74, 74);
+  height:55px;
+  width:100vw;
+  padding:10px 20px 10px 20px;
+  color: white;
+}
+#Registerpageswitch{
+  margin:0px 0px 10px 50px;
+}
+#Loginpageswitch{
+  margin:0px 0px 10px 50px;
+}
+/* #loghomepagebut{
+  margin-left: 1300px;
+} */
+#loginbox input{
+  width:300px;
+  height:35px;
+  padding:3px 3px 3px 3px;
+  outline: none;
+}
+#loginbox div{
+  /* display: flex; */
+  margin-top: 20px;
+}
+#containerloginbut{
+  width:120px;
+  height:40px;
+  /* border:1px solid black; */
+  padding:5px 10px 10px 10px;
+  border-radius: 5px;
+  background-color: rgb(125, 180, 162);
+  margin-left: 100px;
+  color:white;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.2rem;
+
+}
+#Registerbox input{
+  width:300px;
+  height:35px;
+  padding:3px 3px 3px 3px;
+  outline: none;
+}
+#Registerbox div{
+  /* display: flex; */
+  margin-top: 20px;
+}
+#containerRegisterbut{
+  width:120px;
+  height:40px;
+  /* border:1px solid black; */
+  padding:5px 10px 10px 10px;
+  border-radius: 5px;
+  background-color: rgb(125, 180, 162);
+  margin-left: 100px;
+  color:white;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.2rem;
+
+}
+@media (max-width:500px)
+{
+  #searchbar input{
+    width:15rem;
+
+  }
+  #navigation .m{
+    display:none;
+  }
+  #logo{
+    flex:8;
+  }
+  #menuline{
+    display: block;
+    /* flex:1; */
+  }
+  #menulinemenu{
+    display: block;
+  }
+  #categoriesmenu{
+    margin-left: 100px;
+  
+  }
+  #brandsmenu{
+    margin:50px 0px 0px 70px;
+  }
+  
+}
+
